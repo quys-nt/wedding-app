@@ -35,7 +35,7 @@
     .mv-img {
       height: 640px;
       object-fit: cover;
-      object-position: 37%;
+      object-position: 33%;
     }
   }
   .mv-heading__wrapper {
