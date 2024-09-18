@@ -26,6 +26,7 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(#0000001a, #00000096);
+    color: #fff;
   }
   .mv-img {
     max-width: 100%;
@@ -58,26 +59,27 @@
     text-transform: uppercase;
   }
   .mv-heading__contents {
-    font-family: "Great Vibes", cursive;
+    font-family: "Dancing Script", cursive;
     display: flex;
     text-align: center;
     align-items: center;
   }
   .mv-heading__contents p {
-    padding-inline: 20px;
-    font-size: clamp(14px, 2vw, 22px);
+    font-size: clamp(16px, 2vw, 22px);
     font-weight: 400;
   }
-
-  @media screen and (max-width: 768px) {
-    .mv-heading__contents p {
-      padding-inline: 10px;
-    }
-  }
   .mv-heading__contents p:nth-child(2) {
-    font-size: clamp(16px, 2vw, 30px);
+    font-size: clamp(20px, 2vw, 30px);
     border: 1px solid #fff;
     border-top: 0;
     border-bottom: 0;
+    padding-inline: 20px;
+    margin-inline: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    .mv-heading__contents p:nth-child(2) {
+      padding-inline: 10px;
+      margin-inline: 10px;
+    }
   }
 </style>
