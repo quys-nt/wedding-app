@@ -1,10 +1,12 @@
 <script>
+  import About from "./lib/About.svelte";
   import MainVisual from "./lib/MainVisual.svelte";
 </script>
 
 <main>
   <div class="card">
     <MainVisual />
+    <About />
   </div>
 </main>
 

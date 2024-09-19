@@ -18,6 +18,7 @@
 <style>
   .mv {
     position: relative;
+    display: flex;
   }
   .mv-bg {
     position: absolute;
