@@ -8,8 +8,22 @@
   <div class="about__bg about__bg-02"></div>
   <div class="about__bg about__bg-03"></div>
   <div class="about__wrapper">
-    <img src={thiepcuoi01} alt="Thông tin ngày cưới 01" />
-    <img src={thiepcuoi02} alt="Thông tin ngày cưới 02" />
+    <div class="save-day__wrapper">
+      <div class="save-day__inner">
+        <h2 class="save-day__heading">Save <span>The</span> Day</h2>
+        <p class="save-day__heading-01">
+          13.10<br />
+          2024
+        </p>
+        <p class="save-day__heading-02">Phương Anh ♥ Thành Quý</p>
+      </div>
+    </div>
+    <div class="about__wrapper--item">
+      <img src={thiepcuoi01} alt="Thông tin ngày cưới 01" />
+    </div>
+    <div class="about__wrapper--item">
+      <img src={thiepcuoi02} alt="Thông tin ngày cưới 02" />
+    </div>
   </div>
 </section>
 
@@ -19,9 +33,10 @@
     overflow: hidden;
     padding: 100px 12px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1024px) {
     .about {
-      padding-block: 20px;
+      padding-top: 20px;
+      padding-bottom: 0px;
     }
   }
   .about__bg {
@@ -55,16 +70,96 @@
   .about__wrapper {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(3, 860px);
+    grid-template-rows: 600px;
     gap: 10px;
-    max-width: 1440px;
-    margin-inline: auto;
+    overflow: auto;
   }
-  @media screen and (max-width: 1200px) {
+  .about__wrapper::-webkit-scrollbar {
+    width: 0px;
+  }
+  .about__wrapper::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .about__wrapper::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+  @media screen and (max-width: 1024px) {
     .about__wrapper {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(3, 540px);
+      grid-template-rows: 400px;
+    }
+  }
+  .about__wrapper--item {
+    position: relative;
+  }
+  .about__wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .save-day__wrapper {
+    color: #000;
+    height: 100%;
+  }
+  .save-day__inner {
+    position: relative;
+    height: 100%;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    text-align: center;
+    background: #fff url("../assets/images/img-save-day-bg-02.png") no-repeat
+      center;
+    background-size: contain;
+  }
+  .save-day__heading {
+    font:
+      300 16px "Roboto Slab",
+      serif;
+    text-transform: uppercase;
+  }
+  .save-day__heading span {
+    font:
+      400 28px "Dancing Script",
+      cursive;
+    text-transform: capitalize;
+  }
+  .save-day__heading-01 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font:
+      600 9rem "Dancing Script",
+      cursive;
+    transform: translate(-50%, -50%);
+    color: #fbfafa;
+    line-height: 1.2;
+  }
+  @media screen and (max-width: 1024px) {
+    .save-day__heading-01 {
+      font-size: 6rem;
+    }
+  }
+  .save-day__heading-02 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font:
+      400 5.4rem "Great Vibes",
+      system-ui;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    color: #b44a4d;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: 1024px) {
+    .save-day__heading-02 {
+      font-size: 3.5rem;
     }
   }
 </style>
