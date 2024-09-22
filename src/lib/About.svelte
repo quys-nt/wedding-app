@@ -64,7 +64,7 @@
 <style>
   .about {
     position: relative;
-    padding: 100px 12px;
+    /* padding: 100px 12px; */
     min-height: 100vh;
   }
   @media screen and (max-width: 1024px) {
@@ -110,19 +110,17 @@
     width: auto;
     align-content: center;
   }
-  .about__wrapper--item {
-    position: relative;
-  }
   @media screen and (max-width: 1024px) {
     .about__wrapper {
-      grid-template-columns: repeat(3, 540px);
-      grid-template-rows: 400px;
+      grid-template-columns: repeat(3, 620px);
+      grid-template-rows: 460px;
     }
   }
+  .about__wrapper--item {
+    position: relative;
+    padding-inline: 10px;
+  }
   .about__wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
   }

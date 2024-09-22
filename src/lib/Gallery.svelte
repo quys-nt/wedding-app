@@ -1,17 +1,11 @@
 <script>
   let gallery = [
-    "../assets/images/gallery/gallery01.jpg",
-    "../assets/images/gallery/gallery02.jpg",
-    "../assets/images/gallery/gallery03.jpg",
-    "../assets/images/gallery/gallery04.jpg",
-    "../assets/images/gallery/gallery05.jpg",
-    "../assets/images/gallery/gallery06.jpg",
-    "../assets/images/gallery/gallery07.jpg",
-    "../assets/images/gallery/gallery08.jpg",
-    "../assets/images/gallery/gallery09.jpg",
-    "../assets/images/gallery/gallery10.jpg",
-    "../assets/images/gallery/gallery11.jpg",
-    "../assets/images/gallery/gallery12.jpg",
+    "../assets/images/gallery/gallery-01.jpg",
+    "../assets/images/gallery/gallery-02.jpg",
+    "../assets/images/gallery/gallery-03.jpg",
+    "../assets/images/gallery/gallery-04.jpg",
+    "../assets/images/gallery/gallery-05.jpg",
+    "../assets/images/gallery/gallery-06.jpg",
   ];
   export let showModal = false;
   export let imgaModal = "";
@@ -58,7 +52,7 @@
 
   .gallery__lists {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     max-width: 1440px;
     margin-inline: auto;
@@ -67,7 +61,7 @@
 
   @media screen and (max-width: 768px) {
     .gallery__lists {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
@@ -98,8 +92,13 @@
     background: transparent;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 24px);
   }
-
+  @media screen and (min-width: 1200px) {
+    .modal {
+      width: max-content;
+    }
+  }
   @media screen and (max-width: 540px) {
     .modal {
       width: calc(100% - 24px);
@@ -133,5 +132,11 @@
   .modal img {
     object-fit: contain;
     border-radius: 4px;
+  }
+  @media screen and (min-width: 1200px) {
+    .modal img {
+      width: auto;
+      height: calc(100vh - 20px);
+    }
   }
 </style>
