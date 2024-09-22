@@ -1,15 +1,13 @@
 <script>
   import About from "./lib/About.svelte";
+  import Gallery from "./lib/Gallery.svelte";
   import MainVisual from "./lib/MainVisual.svelte";
-  import SaveDay from "./lib/SaveDay.svelte";
 </script>
 
-<main>
-  <div class="card">
-    <MainVisual />
-    <!-- <SaveDay /> -->
-    <About />
-  </div>
+<main class="main">
+  <MainVisual />
+  <About />
+  <Gallery />
 </main>
 
 <svelte:head>
@@ -19,4 +17,7 @@
 </svelte:head>
 
 <style>
+  .main {
+    overflow: hidden;
+  }
 </style>

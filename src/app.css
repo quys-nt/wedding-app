@@ -57,3 +57,7 @@ button:focus-visible {
 img {
   max-width: 100%;
 }
+
+.pin-spacer {
+  position: relative;
+}

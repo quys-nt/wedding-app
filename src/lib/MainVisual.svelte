@@ -6,7 +6,7 @@
   <img src={svelteLogo} class="mv-img" alt="main visual" />
   <div class="mv-bg"></div>
   <div class="mv-heading__wrapper">
-    <h1 class="mv-heading__text">kỷ niệm ngày cưới</h1>
+    <h1 class="mv-heading__text">Save the day</h1>
     <div class="mv-heading__contents">
       <p>Dĩ An <br /> Bình Dương</p>
       <p>Trung Tâm Hội Nghị <br /> Tiệc Cưới Thanh Tùng</p>
