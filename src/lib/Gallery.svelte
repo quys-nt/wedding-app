@@ -50,6 +50,12 @@
     background-size: cover;
   }
 
+  @media screen and (max-width: 768px) {
+    .gallery {
+      padding-block: 20px;
+    }
+  }
+
   .gallery__lists {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -61,7 +67,8 @@
 
   @media screen and (max-width: 768px) {
     .gallery__lists {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
     }
   }
 
