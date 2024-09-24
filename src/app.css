@@ -61,3 +61,8 @@ img {
 .pin-spacer {
   position: relative;
 }
+
+.carousel-modal .sc-carousel__carousel-container,
+.carousel-modal .sc-carousel__content-container {
+  height: 100%;
+}

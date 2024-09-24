@@ -2,12 +2,14 @@
   import About from "./lib/About.svelte";
   import Gallery from "./lib/Gallery.svelte";
   import MainVisual from "./lib/MainVisual.svelte";
+  import SvelteCarousel from "./lib/SvelteCarousel.svelte";
 </script>
 
 <main class="main">
   <MainVisual />
   <About />
   <Gallery />
+  <!-- <SvelteCarousel /> -->
 </main>
 
 <svelte:head>
